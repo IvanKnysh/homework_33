@@ -69,31 +69,123 @@ body {
   position: sticky;
   top: 20px;
 }
+.wrapper-content .flx .sidebar .sidebar-content button.my-orders {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  background: #000000;
+  border: none;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 30px;
+  transition: 0.3s;
+}
+.wrapper-content .flx .sidebar .sidebar-content button.my-orders span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  color: #000;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+.wrapper-content .flx .sidebar .sidebar-content button.my-orders:hover {
+  box-shadow: 0 0 20px -5px #000;
+}
 .wrapper-content .flx .sidebar .sidebar-content h6 {
   text-align: center;
   color: #fff;
   font-size: 18px;
   margin-bottom: 20px;
 }
-.wrapper-content .flx .sidebar .sidebar-content label {
+.wrapper-content .flx .sidebar .sidebar-content .orders {
+  display: none;
+}
+.wrapper-content .flx .sidebar .sidebar-content .orders ul.cart-content {
+  list-style: none;
+}
+.wrapper-content .flx .sidebar .sidebar-content .orders ul.cart-content li {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  color: #ffffff;
+  font-size: 16px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.wrapper-content .flx .sidebar .sidebar-content .orders ul.cart-content li button {
+  width: 20px;
+  height: 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+  border-radius: 4px;
+  background: red;
+  color: #fff;
+  margin-right: 5px;
+}
+.wrapper-content .flx .sidebar .sidebar-content .orders ul.cart-content li .order-info {
+  position: relative;
+  border: 1px solid #fff;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  padding: 10px;
+  display: none;
+}
+.wrapper-content .flx .sidebar .sidebar-content .orders ul.cart-content li .order-info span {
+  font-weight: 700;
+  text-decoration: underline;
+}
+.wrapper-content .flx .sidebar .sidebar-content .orders ul.cart-content li .order-info::before {
+  position: absolute;
+  top: -6px;
+  left: 25px;
+  content: "";
+  width: 0px;
+  height: 0px;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #fff;
+}
+.wrapper-content .flx .sidebar .sidebar-content .orders ul.cart-content li .order-info * {
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.wrapper-content .flx .sidebar .sidebar-content .orders ul.cart-content li .order-info.active {
+  display: block;
+}
+.wrapper-content .flx .sidebar .sidebar-content .orders.active {
+  display: block;
+}
+.wrapper-content .flx .sidebar .sidebar-content .categories label {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
 }
-.wrapper-content .flx .sidebar .sidebar-content label span {
+.wrapper-content .flx .sidebar .sidebar-content .categories label span {
   color: #fff;
   font-size: 16px;
   text-transform: capitalize;
   cursor: pointer;
 }
-.wrapper-content .flx .sidebar .sidebar-content label input {
+.wrapper-content .flx .sidebar .sidebar-content .categories label input {
   display: block;
   margin-right: 10px;
   display: none;
 }
-.wrapper-content .flx .sidebar .sidebar-content label input:checked ~ span {
+.wrapper-content .flx .sidebar .sidebar-content .categories label input:checked ~ span {
   font-weight: 700;
   text-decoration: underline;
+}
+.wrapper-content .flx .sidebar .sidebar-content .categories.active {
+  display: none;
 }
 .wrapper-content .flx .content {
   width: 50%;
